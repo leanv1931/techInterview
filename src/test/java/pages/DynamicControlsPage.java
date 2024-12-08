@@ -74,6 +74,4 @@ public class DynamicControlsPage extends BasePage {
         return messageElement.getText();
     }
 
-
-
 }
