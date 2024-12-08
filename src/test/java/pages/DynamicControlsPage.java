@@ -41,14 +41,11 @@ public class DynamicControlsPage extends BasePage {
         addButton.click();
     }
 
-        
-   
     public String getMessageText() {
         WebElement messageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(checkboxMessageLocator));
         return messageElement.getText();
     }
- 
-    
+  
     public boolean isCheckboxDisplayed() {
         return driver.findElements(checkboxLocator).size() > 0;
     }

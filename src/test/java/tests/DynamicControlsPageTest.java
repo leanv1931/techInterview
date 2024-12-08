@@ -7,9 +7,7 @@ import pages.DynamicControlsPage;
 
 public class DynamicControlsPageTest extends BaseTest {
 	
-	
 	/**
-	 * 
      * Unit Test: Verify that the checkbox is removed and reappears correctly.
      */
 	@Test
@@ -27,7 +25,6 @@ public class DynamicControlsPageTest extends BaseTest {
         Assert.assertTrue(dynamicControlsPage.isCheckboxDisplayed(), "The checkbox should be visible again");
     }
 	
-
     /**
      * * Unit Test: Verifies that the input can be enabled and disabled correctly.
      */
@@ -53,8 +50,5 @@ public class DynamicControlsPageTest extends BaseTest {
     /**
      * * E2E Test: Complete interaction flow with checkbox and input at the same time .. !
      * 
-     * 
      */
-
-
 }
