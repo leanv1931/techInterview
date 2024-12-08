@@ -28,7 +28,7 @@ public class DynamicControlsPage extends BasePage {
     
     public DynamicControlsPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));  // Espera explícita de 10 segundos
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     
     public void clickRemoveButton() {

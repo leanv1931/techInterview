@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-07T23:06:55 ART" name="Default suite" finished-at="2024-12-07T23:07:06 ART" duration-ms="11189">
+  <suite started-at="2024-12-08T00:31:41 ART" name="Default suite" finished-at="2024-12-08T00:31:58 ART" duration-ms="16704">
     <groups>
     </groups>
-    <test started-at="2024-12-07T23:06:55 ART" name="Default test" finished-at="2024-12-07T23:07:06 ART" duration-ms="11189">
+    <test started-at="2024-12-08T00:31:41 ART" name="Default test" finished-at="2024-12-08T00:31:58 ART" duration-ms="16704">
       <class name="tests.DynamicControlsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DynamicControlsPageTest@4f6ee6e4]" started-at="2024-12-07T23:06:55 ART" name="setUp" finished-at="2024-12-07T23:06:59 ART" duration-ms="3610" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DynamicControlsPageTest@6356695f]" started-at="2024-12-08T00:31:41 ART" name="setUp" finished-at="2024-12-08T00:31:43 ART" duration-ms="2367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCheckboxRemovalAndReappearance()[pri:0, instance:tests.DynamicControlsPageTest@4f6ee6e4]" started-at="2024-12-07T23:06:59 ART" name="verifyCheckboxRemovalAndReappearance" finished-at="2024-12-07T23:07:06 ART" duration-ms="7448" status="PASS">
+        <test-method signature="verifyCheckboxRemovalAndReappearance()[pri:0, instance:tests.DynamicControlsPageTest@6356695f]" started-at="2024-12-08T00:31:43 ART" name="verifyCheckboxRemovalAndReappearance" finished-at="2024-12-08T00:31:51 ART" duration-ms="7850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckboxRemovalAndReappearance -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DynamicControlsPageTest@4f6ee6e4]" started-at="2024-12-07T23:07:06 ART" name="tearDown" finished-at="2024-12-07T23:07:06 ART" duration-ms="99" status="PASS">
+        <test-method signature="verifyInputEnableFunctionality()[pri:0, instance:tests.DynamicControlsPageTest@6356695f]" started-at="2024-12-08T00:31:51 ART" name="verifyInputEnableFunctionality" finished-at="2024-12-08T00:31:58 ART" duration-ms="6333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInputEnableFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DynamicControlsPageTest@6356695f]" started-at="2024-12-08T00:31:58 ART" name="tearDown" finished-at="2024-12-08T00:31:58 ART" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

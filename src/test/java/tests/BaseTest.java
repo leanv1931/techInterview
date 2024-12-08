@@ -8,8 +8,6 @@ import org.testng.annotations.BeforeClass;
 public class BaseTest {
 	  protected WebDriver driver;
 
-	 
-	    
 		 @BeforeClass
 		 public void setUp() {
 				System.setProperty("webdriver.chrome.driver","/Users/leandro.valenzuela/Documents/chromedriver");
@@ -17,13 +15,9 @@ public class BaseTest {
 		        driver.get("https://the-internet.herokuapp.com/dynamic_controls");
 		 }
 		 
-
-	    @AfterClass
-	    public void tearDown() {
-	        driver.quit();
+		 @AfterClass
+		 public void tearDown() {
+			 driver.quit();
 	    }
-	 
-	
-
 
 }

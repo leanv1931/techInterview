@@ -5,8 +5,7 @@
     <classes>
       <class name="tests.DynamicControlsPageTest">
         <methods>
-          <include name="verifyInputEnableFunctionality"/>
-          <include name="tearDown"/>
+          <include name="fullDynamicControlsTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.DynamicControlsPageTest -->

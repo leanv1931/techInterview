@@ -3,7 +3,6 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import pages.DynamicControlsPage;
 
 public class DynamicControlsPageTest extends BaseTest {
@@ -11,7 +10,7 @@ public class DynamicControlsPageTest extends BaseTest {
 	
 	/**
 	 * 
-     * Unit Test: Verifica que el checkbox se elimina y reaparece correctamente.
+     * Unit Test: Verify that the checkbox is removed and reappears correctly.
      */
 	@Test
     public void verifyCheckboxRemovalAndReappearance() {
@@ -20,31 +19,31 @@ public class DynamicControlsPageTest extends BaseTest {
         // Paso 1: Remover el checkbox
         dynamicControlsPage.clickRemoveButton();
         Assert.assertEquals(dynamicControlsPage.getMessageText(), "It's gone!");
-        Assert.assertFalse(dynamicControlsPage.isCheckboxDisplayed(), "El checkbox debería estar eliminado.");
+        Assert.assertFalse(dynamicControlsPage.isCheckboxDisplayed(), "The checkbox should be removed");
 
         // Paso 2: Agregar el checkbox nuevamente
         dynamicControlsPage.clickAddButton();
         Assert.assertEquals(dynamicControlsPage.getMessageText(), "It's back!");
-        Assert.assertTrue(dynamicControlsPage.isCheckboxDisplayed(), "El checkbox debería estar visible nuevamente.");
+        Assert.assertTrue(dynamicControlsPage.isCheckboxDisplayed(), "The checkbox should be visible again");
     }
 	
 
     /**
-     * Unit Test: Verifica que el input pueda habilitarse y deshabilitarse correctamente.
+     * * Unit Test: Verifies that the input can be enabled and disabled correctly.
      */
     @Test
     public void verifyInputEnableFunctionality() {
         DynamicControlsPage dynamicControlsPage = new DynamicControlsPage(driver);
 
         // Paso 1: Verificar estado inicial
-        Assert.assertFalse(dynamicControlsPage.isInputEnabled(), "El input debería estar deshabilitado al inicio.");
+        Assert.assertFalse(dynamicControlsPage.isInputEnabled(), "Input should be disabled at startup");
      
 
         // Paso 2: Habilitar el input
         dynamicControlsPage.clickEnableButton();
         Assert.assertEquals(dynamicControlsPage.getMessageTextForInput(), "It's enabled!");
         
-        Assert.assertTrue(dynamicControlsPage.isInputEnabled(), "El input debería estar habilitado.");
+        Assert.assertTrue(dynamicControlsPage.isInputEnabled(), "The input should be enabled");
         
         // Paso 3: DesHabilitar el input
         dynamicControlsPage.clickDisableButton();
@@ -52,43 +51,10 @@ public class DynamicControlsPageTest extends BaseTest {
     }
     
     /**
-     * E2E Test: Flujo completo de interacción con checkbox e input.
+     * * E2E Test: Complete interaction flow with checkbox and input at the same time .. !
+     * 
+     * 
      */
-    
-	/*
-	 * @Test public void fullDynamicControlsTest() { DynamicControlsPage
-	 * dynamicControlsPage = new DynamicControlsPage(driver);
-	 * 
-	 * // Parte 1: Interacción con el checkbox
-	 * dynamicControlsPage.clickRemoveButton();
-	 * Assert.assertEquals(dynamicControlsPage.getMessageText(), "It's gone!");
-	 * Assert.assertFalse(dynamicControlsPage.isCheckboxDisplayed(),
-	 * "El checkbox debería estar eliminado.");
-	 * 
-	 * dynamicControlsPage.clickAddButton();
-	 * Assert.assertEquals(dynamicControlsPage.getMessageText(), "It's back!");
-	 * Assert.assertTrue(dynamicControlsPage.isCheckboxDisplayed(),
-	 * "El checkbox debería estar visible nuevamente.");
-	 * 
-	 * // Parte 2: Interacción con el input
-	 * Assert.assertFalse(dynamicControlsPage.isInputEnabled(),
-	 * "El input debería estar deshabilitado inicialmente.");
-	 * dynamicControlsPage.clickEnableButton();
-	 * Assert.assertEquals(dynamicControlsPage.getMessageTextForInput(),
-	 * "It's enabled!"); Assert.assertTrue(dynamicControlsPage.isInputEnabled(),
-	 * "El input debería estar habilitado."); }
-	 */
 
-
-    
-
-	
-	  
-	 
-
-	 
-
-
-	
 
 }
