@@ -10,6 +10,7 @@ public class DynamicControlsPageTest extends BaseTest {
 	
 	
 	/**
+	 * 
      * Unit Test: Verifica que el checkbox se elimina y reaparece correctamente.
      */
 	@Test
