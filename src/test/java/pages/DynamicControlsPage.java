@@ -16,7 +16,6 @@ public class DynamicControlsPage extends BasePage {
     private WebDriver driver;
     private WebDriverWait wait;
     
-
     private By removeButtonLocator = By.xpath("//button[text()='Remove']");
     private By addButtonLocator = By.xpath("//button[text()='Add']");
     private By checkboxMessageLocator = By.cssSelector("form[id='checkbox-example'] p[id='message']");
